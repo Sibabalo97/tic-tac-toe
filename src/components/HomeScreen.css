@@ -1,0 +1,100 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #4b6cb7, #182848); /* Gradient background */
+  color: white;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  padding: 20px;
+  transition: background-color 0.3s ease; /* Smooth transition on background */
+}
+
+.header-icon {
+  font-size: 4rem;
+  animation: spin 3s infinite linear; /* Adding rotation effect to the icon */
+}
+
+.title {
+  font-family: "Pacifico", cursive; /* Beautiful script font */
+  font-size: 4rem;
+  margin: 10px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow effect for text */
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  font-weight: 300; /* Lighter weight for the subtitle */
+}
+
+.play-button {
+  background-color: #ff7f50; /* Vibrant coral color */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Soft shadow on button */
+  transition: transform 0.2s ease-in-out;
+}
+
+.play-button:hover {
+  transform: scale(1.1); /* Button grows slightly on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Enhance shadow on hover */
+}
+
+.music-player {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #f1f1f1;
+}
+
+.music-button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ff7f50;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.music-button:hover {
+  color: #fff;
+}
+
+.music-player span {
+  margin-left: 10px;
+  font-weight: 300;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .play-button {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+
+  .music-player {
+    font-size: 0.9rem;
+  }
+}
